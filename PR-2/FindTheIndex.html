@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let str1 = "Hello World";
+        let str2 = "How are you";
+
+        const findTheIndex = (str1,str2) => {
+
+            if(str1.includes(str2)){
+                return str1.indexof(str2);
+            }
+            else{
+                return -1;
+            }
+
+        };
+
+        console.log(findTheIndex(str1,str2));
+
+    </script>
+</body>
+</html>

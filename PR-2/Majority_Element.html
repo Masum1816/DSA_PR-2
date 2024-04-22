@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        const array = [1,7,3,7,5,7,4,7,2,7,1,7,3,7];
+        let count = 0;
+        let max = 1;
+        let element;
+
+        for(let i=0; i<array.length-1; i++)
+        {
+            for(let j=i; j<array.length; j++)
+            {
+                if(array[i] == array[j]){
+                    count++;
+                }
+            }
+
+            if(max < count){
+                max = count;
+                element = array[i];
+            }
+
+            count = 0;
+
+        }
+
+        console.log(element,max);
+
+    </script>
+</body>
+</html>
